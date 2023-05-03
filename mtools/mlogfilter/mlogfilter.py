@@ -101,7 +101,7 @@ class MLogFilterTool(LogFileTool):
                                          force=True)
 
         if self.args['json']:
-            print(logevent.to_json(self.args['pretty']))
+            print(logevent.to_json())
             return
         line = logevent.get_line_str(self.args['pretty'])
 
